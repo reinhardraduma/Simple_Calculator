@@ -1,4 +1,4 @@
-#calc program5
+#calc program
 from timer_calc import timer
 import ast
 
