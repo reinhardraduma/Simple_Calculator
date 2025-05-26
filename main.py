@@ -12,6 +12,7 @@ def single_math_expression(expression):
 
     print(f"The result is : {result:.4f}")#rounding the float to 4 digits
     print("="*100)
+    return result# this allows test_main module to check the output hence needed
 
 
 def evaluate_math_expressions():
@@ -19,7 +20,7 @@ def evaluate_math_expressions():
         expression = input("kindly input an expression: ").strip()#removes leading and trailing white spaces
         if expression.lower() in ("exit","quit","end","kill"):
             print("Shutting down...")
-            break
+            break 
         else:
             try:
                 single_math_expression(expression)#calling the function 
